@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font awsome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>portfolio website pratul rastogi</title>
+
+
+</head>
+
+<body>
+    <div class="hero-hearder">
+        <div class="wrapper">
+            <hearder>
+                <div class="logo">
+                    <i class="fa-solid fa-p"></i>
+                    <div class="logo-text">Pratul Rastogi</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span> </span>
+                        <span> </span>
+                        <span> </span>
+                    </div>
+                    <ul class="navlinks">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">portfolio</a>
+                        </li>
+                        <li>
+                            <a href="website.html">website</a>
+                        </li>
+                        <li>
+                            <a href="about12.html">About us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </hearder>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="pratul.jpg" alt="">
+                </div>
+                <div class="hero-text">
+                    <h5>hello I'am
+                        <span class="input"> Full stack Devloper</span></h5>
+                    <h1>PRATUL RASTOGI</h1>
+
+                    <!-- <p>lorem ipsum dolor sit amet consectetur adipisicing elit.<br> soluta deletus dolorumquibusdam dolor maiores magni quod rem inporro,laborum,laudantium ex repllendus explicabo,autemmolestiae! -->
+
+                    </p>
+                    <div class="btn-group">
+                        <a href="download/download.html" class=" btn active">Download CV</a>
+                        <a href="Pink Modern Contact Us Instagram Post.png" class=" btn active">Contact me</a>
+                    </div>
+                    <div class="social">
+                        <a href="https://www.facebook.com/pratul.rastogi.79?mibextid=ZbWKwL">
+                            <i class="fa-brands  fa-2x fa-facebook"></i>
+
+                        </a>
+                        <a href="https://github.com/pratul665 ">
+                            <i class="fa-brands fa-2x fa-github">
+                
+                        </i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/pratul-rastogi-97992522a">
+                            <i class="fa-brands fa-2x fa-linkedin "></i>
+                        </a>
+                        <a href="https://www.instagram.com/it_pratulrastogi4922">
+                            <i class="fa-brands fa-2x fa-instagram "></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----typed js for  cdn typing effect-->
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js></script>
+    <script>
+        var togglebtn = document.qyeryselctor("togglebtn ");
+        var nav = document.qyeryselctor("navlinks ");
+        var link = document.qyeryselctor(".navlinks li ");
+        togglebtn.addEventlistener("click ", function() {
+            this.classlist.togggle("click ");
+            nav.classslist.toggle("open ");
+        })
+        var typed = new Typed(".input", {
+            string: ["full stack Devloper", "Web Devloper"],
+            typedSpeed: 70,
+            backspeed: 55,
+            loop: true
+        })
+    </script>
+</body>
+
+</html>

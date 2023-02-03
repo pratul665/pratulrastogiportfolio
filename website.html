@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+        
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        body a {
+            text-decoration: none;
+            font-size: 1.7rem;
+            font-family: sans-serif;
+            color: rgb(148, 148, 148);
+            background-color: rgb(109, 0, 131);
+            width: 280px;
+            padding: 20px 0px;
+            text-align: center;
+            border-radius: 50px;
+        }
+        
+        a span {
+            position: relative;
+            width: 5rem;
+            visibility: hidden;
+        }
+        
+        a span:after {
+            content: '\21D3';
+            font-size: 5rem;
+            position: absolute;
+            padding-left: 10px;
+            animation: down 1s linear infinite;
+        }
+        
+        @keyframes down {
+            from {
+                top: 10px;
+                opacity: 0;
+            }
+            to {
+                top: 10px;
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://tipandtopclothes.netlify.app" download="pratulrastogi.pdf">tip and top clothes.<span></span></a><br>
+    <a href="https://tipandtop.netlify.app" download="pratulrastogi.pdf"> shoesshopping.<span></span></a><br>
+    <a href="https://pratulrastogibooksellingportal.netlify.app" download="pratulrastogi.pdf">onlinebooksellingportal.<span></span></a><br>
+    <a href="https://shoesshopping.netlify.app" download="pratulrastogi.pdf">shoesshopping2.<span></span></a><br>
+    </a>
+
+    <script>
+        let button = document.querySelector("body a ");
+        button.addEventListener("click ", () => {
+            const span = document.querySelector("a span ");
+            button.style.visibility = "visible ";
+            setTimeout(() => {
+                button.style.paddingRight = '10px';
+                span.style.visibility = "visible ";
+            }, timeout);
+            span.style.visibility = "hidden ";
+            button.style.transition = ".3s ease-in-out ";
+            button.style.paddingRight = "0px ";
+        }, 3000);
+    </script>
+</body>
+
+</html>
